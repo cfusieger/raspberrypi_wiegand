@@ -1,18 +1,18 @@
 ## Raspberry Pi Wiegand Reader
 
 ### Descripción
-Codigo para la lectura de tags/tarjetas RFID mediante una lectora de RFID conectada a una Raspberry Pi con Pigpio.
+Codigo para  leitura de tags/tarjetas RFID mediante una leitora de RFID conectada a uma Raspberry Pi com Pigpio.
 
 ### Requisitos 
 * Python 2.7
 * [Pigpio](http://abyz.me.uk/rpi/pigpio/download.html)
 
-### Instalación de Pigpio
+### Instalacão do Pigpio e dependecias
     $ sudo apt-get update
-    $ sudo apt-get install pigpio python-pigpio python3-pigpio
+    $ sudo apt-get install pigpio python-pigpio python3-pigpio git -y
 
 
-### Instrucciones de uso 
+### Instalacão
 
     $ sudo pigpiod
     $ git clone https://github.com/alxsmora1/rasberrypi_wiegand.git
@@ -20,7 +20,7 @@ Codigo para la lectura de tags/tarjetas RFID mediante una lectora de RFID conect
     $ python wiegand.py
 
 
-### Metodo de conexión 
+### Metodo de uso
 * GPIO (BCM)
-* Se necesita conectar el cable verde (D0) en el GPIO 14 y el cable blanco (D1) en el GPIO 15.
-* Tambien es requerido conectar la tierra (GND) de la lectora a la Raspberry en un pin GND, de lo contrario esto genera que haya ruido durante la lectura y los datos no puedan ser interpretados correcatmente.   
+* Se necesita conectar o cablo verde (D0) no GPIO 14 eo cablo blanco (D1) no GPIO 15.
+* Também e nessessario conectar cabo terra (GND) da leitora em um pino GND da placa Raspberry, pois pode geraralgum ruido durante a leitura dos dados (ruido que pode gerar leitura incorreta dos dados).   
