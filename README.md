@@ -1,7 +1,7 @@
 ## Raspberry Pi Wiegand Reader
 
-### Descripción
-Codigo para  leitura de tags/tarjetas RFID mediante una leitora de RFID conectada a uma Raspberry Pi com Pigpio.
+### Descripcão
+Código para  leitura de tags/tarjetas RFID mediante una leitora de RFID Wiegand conectada a uma Raspberry Pi com Pigpio.
 
 ### Requisitos 
 * Python 2.7
